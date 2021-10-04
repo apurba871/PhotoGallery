@@ -1,0 +1,59 @@
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    /* padding: 2px */
+}
+
+td > img:hover {
+    transform: scale(2, 2);
+    transition: .3s transform;
+    /* box-shadow: 0 0 2px 5px moccasin; */
+    /* box-shadow: 0px 1px 14px 6px #FF9D00; */
+    box-shadow: 0px 1px 14px 6px #d31f4c;
+    /* box-shadow: 0 0 2px 5px rgb(231, 34, 156); */
+}
+
+body {
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 64px;
+    color:darkmagenta;
+}
+
+h3 {
+    font-family: 'Bad Script', cursive;
+    font-size: 32px;
+    color: darkmagenta;
+    margin-top: 100px;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0px;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(139, 0, 139, 0.75), rgba(0, 0, 0, 0));
+}
+
+.special > img:hover {
+    transition: width 10s, height 10s, transform 2s;
+    transform: scale(1.75, 1.75) rotate(360deg);
+    position: relative;
+    z-index: 1;
+}
+
+.special > img {
+    transition: width 10s, height 10s, transform 2s;
+    transform: scale(1, 1) rotate(-360deg);
+}
